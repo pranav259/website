@@ -1,0 +1,16 @@
+# config for xremap for kde
+keymap:
+  - name: Mouse Shortcuts
+    remap:
+      Alt-h: left
+      Alt-j: down
+      Alt-k: up
+      Alt-l: right
+      Super-BTN_SIDE: Super-m
+      Super-BTN_EXTRA: Alt-s
+  - name: "Word delete in specific apps"
+    application:
+      not: ["konsole"] # Won't override close tab in browsers
+    remap:
+      C-w: C-backspace
+      Alt-w: C-w
